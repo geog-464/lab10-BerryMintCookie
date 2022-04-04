@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>lab9</title>
+        <title>lab10</title>
         
 		<!--put your external stylesheet links here-->
 		<link rel="stylesheet" href="css/styles.css">
@@ -13,19 +13,34 @@
 		<script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
 
 		<!--you can also place internal styles here; you would place these within <style> tags-->
+		
     </head>
 
     <body>
         <!--put your initial page content here-->
 		<div id="div1">
+			<p>Q1: Done! </p>
+			<p>Q2: From what I can see, the style all styles the stations points. Instead of a reverse drop, all of the point become circle with color (styles.fillColor), shape (through feature.geometry.type), opacity (styles.fillOpacity), size (through styles.radius), specified in the function. Setting styles.stroke to 'true' will enable an outline on each circle (we won't be able to tell the circles apart if it was 'false').</p>
+			<p>Q3: In blue are stations with Canadian Zip Codes. </p>
+			<p>Q4: Feature = the info about the data point (inc. address, city, zip code, etc.) while layer is what we see on the map (inc. xy coordinates, styling).</p>
+			<p>Q5: options.fill returne true/fasle (so it's a boolean) while get.latlong returns actual numbers in the form of latitude and longitude. </p>
+			<p>Q6: Huge (since the radius is 80) circles with no color filled (since the option has been turned to false) has invaded North America.</p>
 		</div>
+		
+		<div>
+			<select class="li-nav" name="mapdropdown" id="mapdropdown" onChange="loadMap(this.value);">
+			<option value="map0" selected="selected" disabled>Load a map</option>
+			<option value='mapa'>Map A</option>
+			<option value='mapb'>Map B</option>
+			</select>
+		</div>	
+		
 		<div id="mapdiv">
 			
 		</div>
 		
         <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
-        
 		
 		<!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
